@@ -9,8 +9,28 @@ import { NgForm } from '@angular/forms';
 export class BukuComponent {
 
   simpanBuku(form : NgForm){
+
+    if(form.invalid){
+      console.log();
+      return;
+    }
+    let genres: string[] =[];
+
+    if (form.value.genre1==true){
+      genres.push("Biografi")
+    }
+
+    if(form.value.genre2==true){
+      genres.push("Pendidikan")
+    }
+    if(form.value.genre3==true){
+      genres.push("Lainnya")
+    }
+    
     console.log("Pengujian klik")
-    console.log();
+    console.log(form.value.judul);
+    console.log(form.value.penulis);
+    console.log(genres);
 
 
   }

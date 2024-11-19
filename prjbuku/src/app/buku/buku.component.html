@@ -10,10 +10,10 @@
                 <form class="m-4" (submit)="simpanBuku(bukuForm)" #bukuform="ngForm">
                     <div class="mb-3">
                         <label for ="judul" class="form-label">genre</label>
-                        <input type="text" class="form-control" id="judul" ngModel name="judul">
+                        <input type="text" class="form-control" id="judul" ngModel name="judul" required>
                     <div class="mb-3">
                         <label for ="penulis" class="form-label">penulis</label>
-                        <input type="text" class="form-control" id="penulis" ngModel name="penulis">
+                        <input type="text" class="form-control" id="penulis" ngModel name="penulis" required>
                     </div>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
